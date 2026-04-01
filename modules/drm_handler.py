@@ -1535,7 +1535,7 @@ async def drm_handler(bot: Client, m: Message):
                     final_url = url
                     need_referer = False
                     namef = name1
-                    if "appxsignurl.vercel.app/appx/" in url:
+                    if "appxsignurl" in url:
                         try:
                             # Step 1: Directly use the original URL
                             response = requests.get(url.strip(), timeout=10)
